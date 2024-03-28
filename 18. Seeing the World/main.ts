@@ -1,5 +1,6 @@
+// store your location in the array
+let places:string [] = ['Eifel tower', 'London','Time square','New york','Germany'];
 
-//Store the locations in a array. Make sure the array
 //Print your array in its original order.
 console.log('Orignal '+ places);
 

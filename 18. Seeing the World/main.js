@@ -1,10 +1,18 @@
-"use strict";
-//Store the locations in a array. Make sure the array is not in alphabetical order.
-let places = ['Italy', 'Germany', 'Agra', 'Eifel tower', 'Times square'];
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
+// store your location in the array
+var places = ['Eifel tower', 'London', 'Time square', 'New york', 'Germany'];
 //Print your array in its original order.
 console.log('Orignal ' + places);
 //Print your array in alphabetical order without modifying the actual list.
-console.log('Copy ' + [...places].sort());
+console.log('Copy ' + __spreadArray([], places, true).sort());
 //Show that your array is still in its original order by printing it.
 console.log('Orignal ' + places);
 // Print your array in reverse alphabetical order without changing the order of the original list.
